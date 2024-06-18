@@ -1,0 +1,30 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+
+
+// ethereum.request({method : "eth_requestAccounts"})
+// .then(async(acc)=>{
+//     // console.log(typeof acc[0]);
+//     // const temp = "1Ab";
+//     // console.log(temp.toLowerCase());
+
+//     // if(acc[0] == admin.toLowerCase()){
+//     //     console.log("Successful");
+//     //     // setNext("Admin");
+//     //     return (
+//     //         <div>
+//     //           <p>Hello</p>
+//     //         </div>
+//     //       );
+//     // }
+//     // else {
+//     //     console.log("unsuccessful");
+//     // }
+
+    
+//     // if(acc[0])
+// }).catch((err)=>{
+//     console.log(err.message);
+// })

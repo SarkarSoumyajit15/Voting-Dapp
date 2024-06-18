@@ -1,0 +1,11 @@
+
+   
+   .nav__link {
+    align-items: center;
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.4s;
+   }
+   
+
+   

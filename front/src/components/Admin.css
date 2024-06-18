@@ -1,0 +1,34 @@
+header{
+    font-size:xx-large;
+    background-color:blanchedalmond;
+}
+
+.box {
+    margin-top: 2px;
+    display: flex;
+    width: 50px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    background-color: #ccc; /* Background color of the box */
+    border: 1px solid #999; /* Border style */
+    text-align: center; /* Center align content horizontally */
+    justify-content: center; /* Center align content vertically */
+    align-items: center; /* Center align content vertically */
+    font-size: 17px; /* Font size of the number */
+    font-weight: bold; /* Font weight of the number */
+}
+
+.number {
+    display: inline-block; /* Make the number an inline block */
+    vertical-align: middle; /* Align the number vertically in the middle */
+    line-height: 1; /* Ensure the number stays centered */
+}
+
+.div2{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height : 50px;
+
+    
+    
+}

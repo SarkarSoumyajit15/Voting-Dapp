@@ -1,0 +1,152 @@
+{ "abi" : 
+[
+   {
+       "inputs": [
+           {
+               "internalType": "string[]",
+               "name": "_parties",
+               "type": "string[]"
+           },
+           {
+               "internalType": "uint256",
+               "name": "_start_time",
+               "type": "uint256"
+           },
+           {
+               "internalType": "uint256",
+               "name": "_durationInHours",
+               "type": "uint256"
+           },
+           {
+               "internalType": "address[]",
+               "name": "_voters",
+               "type": "address[]"
+           }
+       ],
+       "stateMutability": "nonpayable",
+       "type": "constructor"
+   },
+   {
+       "anonymous": false,
+       "inputs": [
+           {
+               "indexed": true,
+               "internalType": "address",
+               "name": "voter",
+               "type": "address"
+           },
+           {
+               "indexed": false,
+               "internalType": "uint256",
+               "name": "time_of_vote",
+               "type": "uint256"
+           }
+       ],
+       "name": "VoteCasted",
+       "type": "event"
+   },
+   {
+       "anonymous": false,
+       "inputs": [
+           {
+               "indexed": false,
+               "internalType": "uint256",
+               "name": "start_time",
+               "type": "uint256"
+           },
+           {
+               "indexed": false,
+               "internalType": "uint256",
+               "name": "time_now",
+               "type": "uint256"
+           }
+       ],
+       "name": "check",
+       "type": "event"
+   },
+   {
+       "inputs": [
+           {
+               "internalType": "string",
+               "name": "party_name",
+               "type": "string"
+           }
+       ],
+       "name": "addParty",
+       "outputs": [],
+       "stateMutability": "nonpayable",
+       "type": "function"
+   },
+   {
+       "inputs": [
+           {
+               "internalType": "address",
+               "name": "voter_address",
+               "type": "address"
+           }
+       ],
+       "name": "addVoter",
+       "outputs": [],
+       "stateMutability": "nonpayable",
+       "type": "function"
+   },
+   {
+       "inputs": [
+           {
+               "internalType": "string",
+               "name": "party_name",
+               "type": "string"
+           }
+       ],
+       "name": "castVote",
+       "outputs": [],
+       "stateMutability": "nonpayable",
+       "type": "function"
+   },
+   {
+       "inputs": [],
+       "name": "getParties",
+       "outputs": [
+           {
+               "internalType": "string[]",
+               "name": "",
+               "type": "string[]"
+           }
+       ],
+       "stateMutability": "view",
+       "type": "function"
+   },
+   {
+       "inputs": [
+           {
+               "internalType": "string",
+               "name": "party_name",
+               "type": "string"
+           }
+       ],
+       "name": "getParty",
+       "outputs": [
+           {
+               "components": [
+                   {
+                       "internalType": "bool",
+                       "name": "exists",
+                       "type": "bool"
+                   },
+                   {
+                       "internalType": "uint128",
+                       "name": "num_of_votes",
+                       "type": "uint128"
+                   }
+               ],
+               "internalType": "struct Voting.Party",
+               "name": "",
+               "type": "tuple"
+           }
+       ],
+       "stateMutability": "view",
+       "type": "function"
+   }
+]
+}
+
